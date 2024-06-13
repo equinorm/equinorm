@@ -1,0 +1,14 @@
+nohup: ignoring input
+Namespace(attention=0, batch_size=100, cuda=True, dataset='_springs5_initvel1springs-5', degree=2, div=1, epochs=10000, exp_name='exp_1_egnn_vel', gpu=2, log_interval=1, lr=0.0005, max_training_samples=3000, model='egnn_vel', n_layers=4, nf=64, no_cuda=False, norm_diff=False, outf='n_body_system/logs', seed=1, sweep_training=0, tanh=False, test_interval=5, time_exp=0, weight_decay=1e-12)
+Traceback (most recent call last):
+  File "main_nbody.py", line 271, in <module>
+    main()
+  File "main_nbody.py", line 90, in main
+    dataset_train = NBodyDataset(partition='train', max_samples=args.max_training_samples, dataset_name=args.dataset)
+  File "/home/zengliang/egnn-main/n_body_system/dataset_nbody.py", line 27, in __init__
+    self.data, self.edges = self.load()
+  File "/home/zengliang/egnn-main/n_body_system/dataset_nbody.py", line 33, in load
+    charges = np.load('n_body_system/dataset/charges_' + self.sufix + '.npy')
+  File "/home/zengliang/anaconda3/lib/python3.7/site-packages/numpy/lib/npyio.py", line 417, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'n_body_system/dataset/charges_train_springs5_initvel1springs-5.npy'

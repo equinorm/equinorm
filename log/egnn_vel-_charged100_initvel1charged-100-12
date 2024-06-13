@@ -1,0 +1,296 @@
+Namespace(attention=0, batch_size=100, cuda=True, dataset='_charged100_initvel1charged-100', degree=2, div=1, epochs=10000, exp_name='exp-100-egnn_vel-12', gpu=1, log_interval=1, lr=0.0005, max_training_samples=3000, model='egnn_vel', n_layers=12, nf=64, no_cuda=False, norm_diff=False, outf='n_body_system/logs', seed=1, sweep_training=0, tanh=False, test_interval=5, time_exp=0, weight_decay=1e-12)
+EGNN_vel(
+  (embedding): Linear(in_features=1, out_features=64, bias=True)
+  (gcl_0): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_1): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_2): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_3): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_4): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_5): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_6): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_7): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_8): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_9): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_10): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (gcl_11): E_GCL_vel(
+    (edge_mlp): Sequential(
+      (0): Linear(in_features=131, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): SiLU()
+    )
+    (node_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (coord_mlp): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=False)
+    )
+    (coord_mlp_vel): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+Traceback (most recent call last):
+  File "main_nbody.py", line 271, in <module>
+    main()
+  File "main_nbody.py", line 128, in main
+    train(model, optimizer, epoch, loader_train)
+  File "main_nbody.py", line 186, in train
+    loc_pred = model(nodes, loc.detach(), edges, vel, edge_attr)
+  File "/home/zengliang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zengliang/egnn-main/n_body_system/model.py", line 87, in forward
+    h, x, _ = self._modules["gcl_%d" % i](h, edges, x, vel, edge_attr=edge_attr)
+  File "/home/zengliang/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zengliang/egnn-main/models/gcl.py", line 276, in forward
+    edge_feat = self.edge_model(h[row], h[col], radial, edge_attr)
+RuntimeError: CUDA out of memory. Tried to allocate 242.00 MiB (GPU 1; 22.38 GiB total capacity; 21.45 GiB already allocated; 95.56 MiB free; 21.50 GiB reserved in total by PyTorch)
